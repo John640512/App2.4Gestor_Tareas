@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Nueva Tarea</title>
+    <link rel="stylesheet" href="estilosedt.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2><i class="fas fa-plus-circle"></i> Crear Nueva Tarea</h2>
+        
+        <form action="procesar_creacion_tarea.php" method="post">
+            <div class="form-group">
+                <label for="titulo"><i class="fas fa-heading"></i> Título:</label>
+                <input type="text" id="titulo" name="titulo" required 
+                       placeholder="Ingrese el título de la tarea">
+            </div>
+            
+            <div class="form-group">
+                <label for="descripcion"><i class="fas fa-align-left"></i> Descripción:</label>
+                <textarea id="descripcion" name="descripcion" required
+                          placeholder="Describa la tarea en detalle"></textarea>
+            </div>
+            
+            <button type="submit" class="btn-submit"><i class="fas fa-save"></i> Crear Tarea</button>
+            <a href="index.php" class="back-link"><i class="fas fa-arrow-left"></i> Volver al listado</a>
+        </form>
+    </div>
+</body>
+</html>
